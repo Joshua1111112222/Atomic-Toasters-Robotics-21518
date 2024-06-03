@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Toasters Robotics Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #800080; /* Purple */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333; /* Black */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            cursor: pointer;
+            background-color: #800080; /* Purple */
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0;
+        }
+        .section p {
+            display: none;
+            padding: 10px;
+            border: 1px solid #800080; /* Purple */
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            margin: 0;
+        }
+        footer {
+            background-color: #333; /* Black */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Atomic Toasters Robotics Team</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to the Atomic Toasters Robotics Team!</h2>
+    <p>We are here to have fun, spread the word of God, learn, and do well in competitions. Our team has achieved notable success, including making it to the bracket to get to states.</p>
+    
+    <div class="section">
+        <h3 onclick="toggleSection('about')">About Us</h3>
+        <p id="about">
+            The Atomic Toasters Robotics Team is dedicated to promoting STEM education and fostering a passion for robotics among students. Our team consists of talented individuals from diverse backgrounds, all coming together with a shared interest in robotics and technology. We participate in various competitions, such as FIRST Robotics, VEX Robotics, and other local and national contests. Our mission is to inspire the next generation of engineers and innovators through hands-on learning and teamwork. <br><br>
+            Throughout the year, we engage in numerous activities, including designing, building, and programming robots. Our team meetings are filled with brainstorming sessions, problem-solving, and testing our creations. We also participate in community outreach programs, visiting schools and hosting workshops to share our knowledge and enthusiasm for robotics. <br><br>
+            Our mentors, who come from various engineering and technical fields, provide invaluable guidance and support. They help us develop skills in mechanical design, electrical engineering, software development, and project management. The experience we gain through these activities not only prepares us for careers in STEM fields but also teaches us important life skills such as teamwork, leadership, and perseverance. <br><br>
+            Over the years, the Atomic Toasters have achieved significant milestones. We have won several regional competitions, earned awards for innovation and design, and have been recognized for our community outreach efforts. Our journey has been filled with challenges, but our passion for robotics drives us to keep improving and achieving our goals. <br><br>
+            We are excited about the future and the opportunities it holds. As we continue to grow and evolve, we remain committed to our core values of innovation, education, and community service. Join us on our journey as we strive to make a positive impact through robotics.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 onclick="toggleSection('contact')">Contact Information</h3>
+        <p id="contact">
+            For inquiries, please contact us at <a href="mailto:joshuathe2011@gmail.com">joshuathe2011@gmail.com</a>. We are always open to questions, feedback, and opportunities for collaboration. Whether you are a student interested in joining our team, a parent looking to get involved, or a community member with ideas for partnership, we would love to hear from you. <br><br>
+            You can also reach us through our social media channels. Follow us on Facebook, Twitter, and Instagram to stay updated on our latest projects, events, and achievements. We regularly post updates, photos, and videos showcasing our team's progress and activities. <br><br>
+            If you would like to visit us in person, our team meets at the local community center every Wednesday and Saturday. Feel free to drop by during our meeting times to see our work in action and meet the team members. We welcome visitors and are happy to give tours of our workspace and explain our current projects. <br><br>
+            Address: <br>
+            Atomic Toasters Robotics Team <br>
+            Community Center <br>
+            123 Robotics Lane <br>
+            Techville, TX 78901 <br><br>
+            Phone: (123) 456-7890 <br>
+            Email: <a href="mailto:joshuathe2011@gmail.com">joshuathe2011@gmail.com</a> <br><br>
+            We appreciate your interest in the Atomic Toasters Robotics Team and look forward to connecting with you!
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 onclick="toggleSection('sponsorship')">Sponsorship Opportunities</h3>
+        <p id="sponsorship">
+            We welcome sponsorship opportunities to support our team in competitions and projects. Sponsorships help us cover the costs of materials, travel, and registration fees, allowing us to focus on our mission of learning and innovation. By partnering with us, you can make a significant impact on the education and development of young minds interested in STEM fields. <br><br>
+            As a sponsor, your organization will receive recognition on our website, social media channels, and at events. We offer various sponsorship levels, each with unique benefits and opportunities for collaboration. Whether you are a small business or a large corporation, we have a sponsorship package that can align with your goals and budget. <br><br>
+            Benefits of Sponsorship: <br>
+            - Recognition on our team website and social media platforms. <br>
+            - Logo placement on team shirts, banners, and robots. <br>
+            - Opportunities to visit our team, see our work, and engage with our members. <br>
+            - Invitations to special events, competitions, and demonstrations. <br>
+            - Networking opportunities with other sponsors and community partners. <br><br>
+            Sponsorship Levels: <br>
+            1. Platinum Sponsor: $5,000 and above <br>
+            - Premier logo placement on all team materials. <br>
+            - Featured recognition at events and competitions. <br>
+            - Customized engagement opportunities with the team. <br><br>
+            2. Gold Sponsor: $2,500 - $4,999 <br>
+            - Prominent logo placement on team materials. <br>
+            - Recognition at events and competitions. <br>
+            - Opportunities for team visits and interactions. <br><br>
+            3. Silver Sponsor: $1,000 - $2,499 <br>
+            - Logo placement on team materials. <br>
+            - Recognition at events and competitions. <br>
+            - Team visits and engagement opportunities. <br><br>
+            4. Bronze Sponsor: $500 - $999 <br>
+            - Logo placement on team materials. <br>
+            - Recognition at events. <br>
+            - Team visits and interactions. <br><br>
+            5. Friend of the Team: Up to $499 <br>
+            - Recognition on team website and social media. <br>
+            - Opportunities to visit and interact with the team. <br><br>
+            To become a sponsor or learn more about sponsorship opportunities, please contact us at <a href="mailto:joshuathe2011@gmail.com">joshuathe2011@gmail.com</a>. We are grateful for your support and look forward to partnering with you to advance STEM education and innovation.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 onclick="toggleSection('team')">Team Members</h3>
+        <p id="team">
+            Our team is composed of talented and dedicated individuals who bring a variety of skills and expertise to the table. Meet our team members: <br><br>
+            Teachers: <br>
+            1. Steve Freece <br>
+            2. Chloe Malcom <br>
+            3. Jessica Wash <br><br>
+            Mentors: <br>
+            1. Jadon Wright <br>
+            2. Luke Beaudoin <br><br>
+            Coders: <br>
+            1. Joshua The <br>
+            2. Luke Anderson <br>
+            3. Eli Washburn <br><br>
+            Builders: <br>
+            1. Mike Didlake <br>
+            2. Cooper Dalfino <br>
+            3. Loriel Achondah <br>
+            4. Nathan Hurd <br>
+            5. Evan Sylvester <br>
+            6. Aiden Dejesus <br><br>
+            Arm Operators: <br>
+            1. Joshua The <br>
+            2. Eli Washburn <br><br>
+            Drivers: <br>
+            1. Nathan Hurd <br>
+            2. Mike Didlake <br><br>
+            Together, our team works collaboratively to achieve our goals and push the boundaries of what is possible in robotics. Each member brings unique strengths and perspectives, making us a well-rounded and dynamic team. We are proud of our accomplishments and excited about the future as we continue to innovate and inspire.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Atomic Toasters Robotics Team | Contact: <a href="mailto:joshuathe2011@gmail.com">joshuathe2011@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
